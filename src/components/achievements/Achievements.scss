@@ -1,0 +1,52 @@
+#achievements{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    .description{
+        width: 100%;
+        p{
+            padding: 3em;
+            line-height: 1.4em;
+        }
+    }
+}
+
+.soccer-container{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    // padding: 0 2em 2em 2em;
+    // background: #F1F1F1;
+    border: solid #f7f7f9;
+    border-width: .2rem;
+
+}
+
+.highschool-container{
+    display: flex;
+    flex-direction: column;
+    .award{
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #3f51b529;
+        .left{
+            width: 30%;
+        }
+        .right{
+            width: 70%;
+        }
+        .section{
+            width: 100%;
+            padding: .5rem;
+            font-weight: 500;
+            color: #3f51b5;
+        }
+        .center{
+            width: 100%;
+            // padding: .5rem;
+            // font-weight: 500;
+            // color: #3f51b5;
+        }
+    }
+}

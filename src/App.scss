@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Montserrat+Alternates');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Slab');
+
+.App {
+  text-align: center;
+//   width: 100vw;
+  height: calc(100% - 56px);
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+}
+
+.App-header {
+    position: sticky;
+    top:0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fbfbfb;
+    // padding: 0 1em;
+    height: 56px;
+    transition: left 0.5s;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);;
+    z-index: 5;
+    nav{
+      display: flex;
+      width: 100%;
+      max-width: 35rem;
+      padding: 0 5rem;
+      justify-content: space-between;
+       a{
+            padding: 0 1em;
+            margin: 0 1em;
+            border-bottom: 3px solid transparent;
+            transition: .15s;
+            text-decoration: none;
+            font-size: 1.3em;
+            color: #990000;
+            &:after{
+                display:block;
+                content: '';
+                border-bottom: solid 2px #990000;
+                transform: scaleX(0);
+                transition: transform 250ms ease-in-out;
+            }
+            &:hover:after {
+                // border-bottom: 3px solid ;
+                cursor: pointer;
+                transform: scaleX(1);
+            }
+        }
+      div{
+        text-decoration: none;
+      }
+    }
+    .mobile-nav{
+      display: none;
+        a{
+            padding: 0 1em;
+            margin: 0 1em;
+            border-bottom: 3px solid transparent;
+            transition: .15s;
+            text-decoration: none;
+            font-size: 1.3em;
+            color: #990000;
+            &:after{
+                display:block;
+                content: '';
+                border-bottom: solid 2px #990000;
+                transform: scaleX(0);
+                transition: transform 250ms ease-in-out;
+            }
+            &:hover:after {
+                // border-bottom: 3px solid ;
+                cursor: pointer;
+                transform: scaleX(1);
+            }
+        }
+    }
+    // background-color: #282c3452;
+  }
+
+  @media (max-width: 700px) {
+    .App-header{
+      justify-content: unset;
+      nav{
+        display: none;
+      }
+      .mobile-nav{
+        display: inline;
+        padding: 0 1em;
+      }
+    }
+  }
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
