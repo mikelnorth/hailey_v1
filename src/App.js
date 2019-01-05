@@ -9,7 +9,14 @@ import Blog from './components/blog/Blog'
 import Trainings from './components/trainings/Trainings'
 import MobileNav from './components/nav/MobileNav';
 import NotFound from './NotFound';
+import LogRocket from 'logrocket';
+// import Sentry from './ErrorHanlding'
 
+//error tracking
+LogRocket.init('82lcwx/hailey_v1');
+// Sentry.init({
+//  dsn: "https://24ab99c4a6c54f4a8a859b85d2381de7@sentry.io/1364819"
+// });
 
 class App extends Component {
   render() {
