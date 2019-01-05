@@ -6,9 +6,12 @@ import AppBar from '@material-ui/core/AppBar';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
-import HighSchool from '../achievements/HighSchool'
-import Club from '../achievements/Club'
-import College from '../achievements/College'
+import HighSchool from '../achievements/soccer/HighSchool'
+import Club from '../achievements/soccer/Club'
+import College from '../achievements/soccer/College'
+import Education from '../achievements/teaching/Education'
+import Experience from '../achievements/coaching/Experience'
+import Trainings from '../achievements/coaching/Trainings'
 
 function TabContainer({ children, dir }) {
     return (
@@ -68,8 +71,8 @@ class FullWidthTabs extends React.Component {
                     index={this.state.value}
                     onChangeIndex={this.handleChangeIndex}
                 >
-                    <TabContainer dir={theme.direction}><Club /></TabContainer>
-                    <TabContainer dir={theme.direction}><HighSchool /></TabContainer>
+                    <TabContainer dir={theme.direction}><Experience /></TabContainer>
+                    <TabContainer dir={theme.direction}><Trainings /></TabContainer>
                 </SwipeableViews>
             case 'teacher':
                 return <SwipeableViews
@@ -77,7 +80,7 @@ class FullWidthTabs extends React.Component {
                     index={this.state.value}
                     onChangeIndex={this.handleChangeIndex}
                 >
-                    <TabContainer dir={theme.direction}><Club /></TabContainer>
+                    <TabContainer dir={theme.direction}><Education /></TabContainer>
                 </SwipeableViews>
 
         }

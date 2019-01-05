@@ -13,7 +13,7 @@ export default class About extends Component {
   constructor(props){
     super(props);
     this.state = {
-      section: 'soccer'
+      section: 'teacher'
     }
 
   }
@@ -71,7 +71,7 @@ export default class About extends Component {
                 <span className="divider" />Hailey S. North<span className="divider" />
           </div>
           <Quote/>
-          <section>
+          <section id='card-section'>
             <div className='card-container'>
             {cards.map((card, i) => {
               return <Card key={`id-${i}`} {...card} handleClick={this.handleClick}/>

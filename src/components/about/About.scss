@@ -23,35 +23,93 @@
         }
     }
 
-    section{
+    #card-section{
+        display: flex;
+        justify-content: center;
+        padding: 0 2em;
         .card-container{
             display: flex;
             justify-content: space-between;
-            padding: 0 10px;
+            max-width: 80em;
+            width: 90%
+
         }
     }
 
     @media screen and (max-width: 1024px) {
         .card-container{
-            .ImgMediaCard-card-1{
-                marigin: 10px;
-            }
-            .MuiTypography-body1-46{
-                display: none;
-            }
-            .MuiCardContent-root-74{
-                padding-top: 0;
-                padding-bottom: 0;
+            >div{
+                margin: 20px 10px;
+                button{
+                    h2{
+                        margin: 0;
+                    }
+                    div{
+                        display: none;
+                    }
+                }
             }
         }
     }
+    @media screen and (max-width: 750px) {
+        #card-section{
+            padding: 0 1em;
+            .card-container{
+                width: 100%;
+                max-width: 100%;
+                justify-content: space-evenly;
+                > div {
+                    margin: 10px 5px;
+                    min-width: 120px;
+                    button{
+                        h2{
+                            font-size: 1.5em;
+                            padding: .5em;
+                        }
+                        img{
+                            display: none;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 450px) {
+        #card-section{
+            .card-container{
+                > div {
+                    margin: 10px 5px;
+                    min-width: 100px;
+                }
+
+            }
+        }
+    }
+    @media screen and (max-width: 350px) {
+        #card-section{
+            padding: 0 1em;
+            .card-container{
+                width: 100%;
+                max-width: 100%;
+                justify-content: space-evenly;
+                > div {
+                    margin: 5px;
+                    min-width: 90px;
+                }
+
+            }
+        }
+    }
+
 }
 
 
 //Quote scss
 .__quote{
     padding: 3em;
-
+    margin: auto;
+    max-width: 50em;
     h1 {
       font-size: 16px;
       text-align: center;
@@ -111,6 +169,7 @@
         position: absolute;
         top: -.2em;
         left: 0;
+        display: none;
     }
 
     .testimonial-quote cite {
@@ -134,7 +193,7 @@
     }
 
     .testimonial-quote .quote-container {
-        padding-left: 160px;
+        // padding-left: 160px;
     }
 
     .testimonial-quote.right .quote-container {
@@ -149,6 +208,38 @@
 
     .testimonial-quote.right cite {
         text-align: right;
+
     }
 
+}
+
+@media screen and (max-width: 1224px) {
+    .__quote{
+        padding: 3em 10em;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .__quote{
+        padding: 3em 5em;
+        .testimonial-quote{
+           img{
+                width: 100px;
+                height: 100px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 600px) {
+    .__quote{
+        padding: 2em 2em;
+        .testimonial-quote{
+
+            img{
+                display: none;
+            }
+            .quote-container{
+                padding: 0;
+            }
+        }
+    }
 }

@@ -1,15 +1,15 @@
 import React, { Component } from 'react'
-import Soccer from './Soccer'
-import Teacher from './Teacher'
-import Coach from './Coach'
+import Soccer from './soccer/Soccer'
+import Teacher from './teaching/Teacher'
+import Coach from './soccer/coach/Coach'
 import './Achievements.scss'
 
 export default class Achievements extends Component {
   constructor(props){
     super(props);
     this.state = {
-      section: 'soccer',
-      tab: 2
+      section: 'teacher',
+      // tab: 2
     }
   }
 
@@ -45,7 +45,7 @@ export default class Achievements extends Component {
       <section id='achievements'>
         {this.loadComponent()}
         {console.log(this.state.tab == 2)}
-        {this.state.tab == 2 ?
+        {(this.state.tab == 2 && this.state.section == 'soccer') ?
           <div className='description'>
             <hr/>
             <p>

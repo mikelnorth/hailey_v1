@@ -3,6 +3,7 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    padding: 2em 0;
     .description{
         width: 100%;
         p{
@@ -12,7 +13,7 @@
     }
 }
 
-.soccer-container{
+.mui-list-container{
     display: flex;
     justify-content: center;
     width: 90%;
@@ -20,7 +21,7 @@
     // background: #F1F1F1;
     border: solid #f7f7f9;
     border-width: .2rem;
-
+    // margin: 2em 0;
 }
 
 .highschool-container{
@@ -47,6 +48,16 @@
             // padding: .5rem;
             // font-weight: 500;
             // color: #3f51b5;
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    #achievements{
+        padding: 1em .3em;
+        .mui-list-container{
+            width: 100%;
+            // margin: 1em 0;
         }
     }
 }

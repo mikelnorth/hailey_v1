@@ -29,6 +29,9 @@ const styles = {
         marginLeft: -12,
         marginRight: 20,
     },
+    link:{
+        textDecoration: 'none',
+    }
 };
 
 class TemporaryDrawer extends React.Component {
@@ -50,25 +53,25 @@ class TemporaryDrawer extends React.Component {
 
         const sideList = (
             <div className={classes.list}>
-                <Link to="/">
+                <Link to="/" className={classes.link}>
                     <ListItem button className={classes.item}>
                         <ListItemText primary={'About'} />
                     </ListItem>
                 </Link>
                 <Divider />
-                <Link to="/blog">
+                <Link to="/blog" className={classes.link}>
                     <ListItem button className={classes.item}>
                         <ListItemText primary={'Blog'} />
                     </ListItem>
                 </Link>
                 <Divider />
-                <a href="https://trainlikeagirl.setmore.com/resourcebookingpage/r7ed71544757284692" target="_blank">
+                <a href="https://trainlikeagirl.setmore.com/resourcebookingpage/r7ed71544757284692" target="_blank" className={classes.link}>
                     <ListItem button className={classes.item}>
-                        <ListItemText primary={'Trainings'} />
+                        <ListItemText primary={'Book Training'} />
                     </ListItem>
                 </a>
                 <Divider />
-                <Link to="/contact">
+                <Link to="/contact" className={classes.link}>
                     <ListItem button className={classes.item}>
                         <ListItemText primary={'Contact'} />
                     </ListItem>
