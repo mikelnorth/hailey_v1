@@ -6,9 +6,9 @@ import AppBar from '@material-ui/core/AppBar';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
-import HighSchool from '../achievements/soccer/HighSchool'
-import Club from '../achievements/soccer/Club'
-import College from '../achievements/soccer/College'
+import HighSchool from '../achievements/player/HighSchool'
+import Club from '../achievements/player/Club'
+import College from '../achievements/player/College'
 import Education from '../achievements/teaching/Education'
 import Experience from '../achievements/coaching/Experience'
 import Trainings from '../achievements/coaching/Trainings'

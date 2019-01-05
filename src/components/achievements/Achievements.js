@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import Soccer from './soccer/Soccer'
+import Soccer from './player/Soccer'
 import Teacher from './teaching/Teacher'
-import Coach from './soccer/coach/Coach'
+import Coach from './coaching/Coach'
 import './Achievements.scss'
 
 export default class Achievements extends Component {

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Tabs from '../../../ui/Tabs'
+import Tabs from '../../ui/Tabs'
 
 
 export default class Coach extends Component {
