@@ -9,7 +9,7 @@ export default class Nav extends Component {
         <Link to='/'><div>About</div></Link>
         <Link to='/blog'><div>Blog</div></Link>
         <Link to='/contact'><div>Contact</div></Link>
-        <a href='https://trainlikeagirl.setmore.com/resourcebookingpage/r7ed71544757284692' target="_blank">Trainings</a>
+        <a href='https://trainlikeagirl.setmore.com/resourcebookingpage/r7ed71544757284692' rel="noopener noreferrer" target="_blank">Trainings</a>
 
       </nav>
     )

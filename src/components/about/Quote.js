@@ -10,7 +10,7 @@ export default class Quote extends Component {
                 <img src={Img} alt="Rich Manning"/>
                 <div className="quote-container">
                     <blockquote>
-                        <p>One of the greatest this program has ever seen”</p>
+                        <p>Hailey has been a fantastic leader. She has scored big goals, and played any role the team needed.</p>
                     </blockquote>
                     <cite>
                         <span>Rich Manning</span><br/>

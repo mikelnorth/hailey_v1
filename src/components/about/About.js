@@ -3,7 +3,7 @@ import './About.scss'
 import Achievements from '../achievements/Achievements'
 import Card from '../ui/Card'
 
-import Billboard from '../../assets/img/billboard.jpg';
+// import Billboard from '../../assets/img/billboard.jpg';
 import ShotImg from '../../assets/img/shot.jpg'
 import Avalanche from '../../assets/img/avalanche-logo.png'
 import Grad from '../../assets/img/grad.JPG'
@@ -13,7 +13,7 @@ export default class About extends Component {
   constructor(props){
     super(props);
     this.state = {
-      section: 'teacher'
+      section: 'soccer'
     }
 
   }
@@ -43,26 +43,6 @@ export default class About extends Component {
         logo: Avalanche,
         title: 'Coach',
         summary: 'Wanting to help young players reach their goals and play at the next level, Hailey has signed on as a coach and personal trainer for many aspiring athletes.'
-      }
-    ]
-    const cards2 = [
-      {
-        section: 'teacher',
-        logo: Grad,
-        title: 'Teacher',
-        summary: 'Playing at the highest level of collegiate soccer, Hailey has led the Pac 12 as top goal scorer, won awards for offensive and defensive positions and lead as team captain.',
-      },
-      {
-        section: 'soccer',
-        logo: ShotImg,
-        title: 'Player',
-        summary: 'Playing at the highest level of collegiate soccer, Hailey has led the Pac 12 as top goal scorer, won awards for offensive and defensive positions and lead as team captain.',
-      },
-      {
-        section: 'coach',
-        logo: Avalanche,
-        title: 'Coach',
-        summary: 'Playing at the highest level of collegiate soccer, Hailey has led the Pac 12 as top goal scorer, won awards for offensive and defensive positions and lead as team captain.',
       }
     ]
     return (

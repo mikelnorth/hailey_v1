@@ -5,10 +5,6 @@ import { Link } from 'react-router-dom'
 
 
 export default class Contact extends Component {
-  constructor(props) {
-    super(props)
-  }
-
   render() {
     return (
       <div className="contact-container bg-contact2" style={{ backgroundImage: "url('../../assets/img/bg-01.jpg')" }}>

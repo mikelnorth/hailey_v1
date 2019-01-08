@@ -9,7 +9,7 @@ export default class Achievements extends Component {
     super(props);
     this.state = {
       section: 'teacher',
-      // tab: 2
+      tab: 2
     }
   }
 
@@ -22,7 +22,6 @@ export default class Achievements extends Component {
   }
 
   updateState = (key, value) => {
-    console.log({value})
     this.setState({ [key]: value })
   }
 
@@ -40,12 +39,10 @@ export default class Achievements extends Component {
   }
 
   render() {
-    console.log(this.state.tab)
     return (
       <section id='achievements'>
         {this.loadComponent()}
-        {console.log(this.state.tab == 2)}
-        {(this.state.tab == 2 && this.state.section == 'soccer') ?
+        {(this.state.tab === 2 && this.state.section === 'soccer') ?
           <div className='description'>
             <hr/>
             <p>

@@ -44,7 +44,7 @@ class FullWidthTabs extends React.Component {
 
     handleChange = (event, value) => {
         this.setState({ value });
-        if (this.props.section == 'soccer') {
+        if (this.props.section === 'soccer') {
             this.props.updateState("tab", value)
         }
     };
@@ -82,7 +82,16 @@ class FullWidthTabs extends React.Component {
                 >
                     <TabContainer dir={theme.direction}><Education /></TabContainer>
                 </SwipeableViews>
-
+            default:
+                return <SwipeableViews
+                    axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
+                    index={this.state.value}
+                    onChangeIndex={this.handleChangeIndex}
+                >
+                    <TabContainer dir={theme.direction}><HighSchool /></TabContainer>
+                    <TabContainer dir={theme.direction}><Club /></TabContainer>
+                    <TabContainer dir={theme.direction}><College {...this.props}/></TabContainer>
+                </SwipeableViews>
         }
 
     }
