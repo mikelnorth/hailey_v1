@@ -31,6 +31,22 @@ const styles = {
     },
     link:{
         textDecoration: 'none',
+        color: '#696767',
+    },
+    bottom:{
+        position: 'absolute',
+        bottom: 0,
+        display: 'flex',
+        justifyContent: 'center',
+        fontSize: '1.5em',
+        width: '81%',
+        padding: '1em',
+        justifyContent: 'center',
+    },
+    icons:{
+        width: '100%',
+        display: 'flex',
+        justifyContent: 'space-around',
     }
 };
 
@@ -76,6 +92,13 @@ class TemporaryDrawer extends React.Component {
                         <ListItemText primary={'Contact'} />
                     </ListItem>
                 </Link>
+                <div className={classes.bottom}>
+                    <div className={classes.icons}>
+                        <a className={classes.link} href="https://www.instagram.com/haileyskol.north/?hl=en" rel="noopener noreferrer" target="_blank"><i className="fab fa-instagram instagram" /></a>
+                        <a className={classes.link} href="https://twitter.com/soccer30girl" rel="noopener noreferrer" target="_blank"><i className="fab fa-twitter-square twitter" /></a>
+                        <a className={classes.link} href="https://www.youtube.com/channel/UC-tQNJMwd7UIZgrJKbLMZEw" rel="noopener noreferrer" target="_blank"><i className="fab fa-youtube youtube" /></a>
+                    </div>
+                </div>
 
             </div>
         );
@@ -121,7 +144,8 @@ class TemporaryDrawer extends React.Component {
                         {sideList}
                     </div>
                 </Drawer>
-                <Drawer anchor="top" open={this.state.top} onClose={this.toggleDrawer('top', false)}>
+
+                {/* <Drawer anchor="top" open={this.state.top} onClose={this.toggleDrawer('top', false)}>
                     <div
                         tabIndex={0}
                         role="button"
@@ -154,7 +178,7 @@ class TemporaryDrawer extends React.Component {
                     >
                         {sideList}
                     </div>
-                </Drawer>
+                </Drawer> */}
             </div>
         );
     }

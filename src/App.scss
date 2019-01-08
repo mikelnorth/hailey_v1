@@ -13,12 +13,12 @@
   height: 40vmin;
 }
 
-.App-header {
+nav{
     position: sticky;
     top:0;
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     background: #fbfbfb;
     // padding: 0 1em;
@@ -26,9 +26,12 @@
     transition: left 0.5s;
     box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);;
     z-index: 5;
-    nav{
+    .left,.right{
+      width: 10em;
+    }
+    .middle{
       display: flex;
-      width: 100%;
+      width: 80%;
       max-width: 35rem;
       padding: 0 5rem;
       justify-content: space-between;
@@ -58,43 +61,105 @@
         text-decoration: none;
       }
     }
-    .mobile-nav{
-      display: none;
-        a{
-            padding: 0 1em;
-            margin: 0 1em;
-            border-bottom: 3px solid transparent;
-            transition: .15s;
-            text-decoration: none;
-            font-size: 1.3em;
-            color: #990000;
-            &:after{
-                display:block;
-                content: '';
-                border-bottom: solid 2px #990000;
-                transform: scaleX(0);
-                transition: transform 250ms ease-in-out;
-            }
-            &:hover:after {
-                // border-bottom: 3px solid ;
-                cursor: pointer;
-                transform: scaleX(1);
-            }
+    .right{
+      padding: 0 1em;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      a{
+        text-decoration: none;
+      }
+      i{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        font-size: 2em;
+        margin: 0 .2em;
+        color: #696767;
+      }
+      .instagram{
+        width: .95em;
+        height: .95em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:hover{
+          cursor: pointer;
+          color: #8a3ab9;
+          color: white;
+          background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+          border-radius: 25%
         }
+      }
+      .twitter:hover{
+        cursor: pointer;
+        color: #00aced;
+      }
+      .youtube:hover{
+        cursor: pointer;
+        color: #ff0000;
+      }
     }
     // background-color: #282c3452;
   }
 
-  @media (max-width: 700px) {
-    .App-header{
-      justify-content: unset;
-      nav{
+  .mobile-nav{
+    position: sticky;
+    top:0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fbfbfb;
+    // padding: 0 1em;
+    height: 56px;
+    transition: left 0.5s;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);;
+    z-index: 5;
+    padding: 0 1em;
+    display: none;
+    a{
+          padding: 0 1em;
+          margin: 0 1em;
+          border-bottom: 3px solid transparent;
+          transition: .15s;
+          text-decoration: none;
+          font-size: 1.3em;
+          color: #990000;
+          &:after{
+              display:block;
+              content: '';
+              border-bottom: solid 2px #990000;
+              transform: scaleX(0);
+              transition: transform 250ms ease-in-out;
+          }
+          &:hover:after {
+              // border-bottom: 3px solid ;
+              cursor: pointer;
+              transform: scaleX(1);
+          }
+      }
+  }
+  @media (max-width: 900px) {
+    nav{
+      justify-content: space-between;
+      .left{
         display: none;
       }
-      .mobile-nav{
-        display: inline;
-        padding: 0 1em;
+      .middle{
+        padding: 0;
+        width: unset;
+        a{
+          margin: 0;
+        }
       }
+    }
+  }
+  @media (max-width: 700px) {
+    nav{
+      display: none;
+    }
+    .mobile-nav{
+      display: flex;
     }
   }
 .App-link {

@@ -29,10 +29,10 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
+        <>
           <Nav />
           <MobileNav/>
-        </header>
+        </>
         <Switch>
           <Route component={About} exact path='/' />
           <Route component={Blog} exact path='/blog' />

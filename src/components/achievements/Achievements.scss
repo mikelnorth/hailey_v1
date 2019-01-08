@@ -52,6 +52,37 @@
     }
 }
 
+iframe{
+    padding: 2em 0;
+    width: 887px;
+    height: 499px;
+}
+
+@media screen and (max-width: 1024px) {
+    iframe{
+        width: 700px;
+        height: 394px;
+    }
+}
+@media screen and (max-width: 900px) {
+    iframe{
+        width: 600px;
+        height: 338px;
+    }
+}
+@media screen and (max-width: 750px) {
+    iframe{
+        width: 450px;
+        height: 253px;
+    }
+}
+@media screen and (max-width: 600px) {
+    iframe{
+        padding: 1em 0;
+        width: 385px;
+        height: 217px;
+    }
+}
 @media screen and (max-width: 450px) {
     #achievements{
         padding: 1em .3em;
@@ -59,5 +90,16 @@
             width: 100%;
             // margin: 1em 0;
         }
+    }
+      iframe{
+        width: 360px;
+        height: 203px;
+    }
+}
+@media screen and (max-width: 350px) {
+    iframe{
+        padding: 1em 0;
+        width: 300px;
+        height: 269px;
     }
 }
