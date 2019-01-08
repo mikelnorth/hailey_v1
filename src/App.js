@@ -15,11 +15,11 @@ import LogRocket from 'logrocket';
 //error tracking
 LogRocket.init('82lcwx/hailey_v1');
 LogRocket.identify('THE_USER_ID_IN_YOUR_APP', {
-  name: 'James Morrison',
-  email: 'jamesmorrison@example.com',
+  name: '',
+  email: '',
 
   // Add your own custom user variables here, ie:
-  subscriptionType: 'pro'
+  // subscriptionType: 'pro'
 });
 // Sentry.init({
 //  dsn: "https://24ab99c4a6c54f4a8a859b85d2381de7@sentry.io/1364819"
