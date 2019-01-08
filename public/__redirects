@@ -1,0 +1,2 @@
+# Redirect default Netlify subdomain to primary domain
+http://mikelnorth.netlify.com/* http://www.beta.mikelnorth.win/:splat 301!
