@@ -1,1 +1,13 @@
 /* /index.html 200
+
+# Redirect domain aliases to primary domain
+http://www.haileynorth.info/* http://www.haileynorth.net/:splat 301!
+http://www.haileynorth.biz/* http://www.haileynorth.net/:splat 301!
+http://www.haileyskolmoski.net/* http://www.haileynorth.net/:splat 301!
+http://www.haileyskolmoski.org/* http://www.haileynorth.net/:splat 301!
+http://www.haileyskolmoski.info/* http://www.haileynorth.net/:splat 301!
+http://www.haileyskolmoski.biz/* http://www.haileynorth.net/:splat 301!
+http://www.haileyskolmoski.com/* http://www.haileynorth.net/:splat 301!
+
+# Optional: Redirect default Netlify subdomain to primary domain
+http://haileynorth.netlify.com/* http://www.haileynorth.net/:splat 301!
