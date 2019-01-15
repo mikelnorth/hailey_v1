@@ -31,7 +31,7 @@ export default class HighSchool extends Component {
                 award: "Team Captian",
             },
             {
-                section: 'Junior Year - 201'
+                section: 'Junior Year - 2017'
             },
             {
                 dates: "2017",
