@@ -14,7 +14,9 @@ import LogRocket from 'logrocket';
 // import Sentry from './ErrorHanlding'
 
 //error tracking
+console.log('env',process.env)
 if (process.env.REACT_APP_BUILD !== 'dev') {
+  console.log('made it in')
   LogRocket.init(process.env.REACT_APP_LOGROCKET_INIT);
   LogRocket.identify('Test ID', {
     name: 'Bob',
