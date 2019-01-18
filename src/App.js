@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+
 // import logo from './logo.svg';
 import './App.scss';
 import { Switch, Route } from "react-router-dom";
@@ -13,14 +14,17 @@ import LogRocket from 'logrocket';
 // import Sentry from './ErrorHanlding'
 
 //error tracking
-LogRocket.init('82lcwx/hailey_v1');
-LogRocket.identify('THE_USER_ID_IN_YOUR_APP', {
-  name: '',
-  email: '',
+console.log('env', process.env)
+if (process.env.REACT_APP_BUILD !== 'dev') {
+  LogRocket.init(process.env.REACT_APP_LOGROCKET_INIT);
+  LogRocket.identify('Test ID', {
+    name: 'Bob',
+    email: 'Saget',
 
-  // Add your own custom user variables here, ie:
-  // subscriptionType: 'pro'
-});
+    // Add your own custom user variables here, ie:
+    // subscriptionType: 'pro'
+  });
+}
 // Sentry.init({
 //  dsn: "https://24ab99c4a6c54f4a8a859b85d2381de7@sentry.io/1364819"
 // });
