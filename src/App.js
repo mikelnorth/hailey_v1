@@ -16,7 +16,6 @@ import * as Sentry from '@sentry/browser';
 import helpers from './helpers';
 
 
-
 //error tracking
 helpers.setCookie()
 // if (process.env.REACT_APP_BUILD !== 'dev') {
