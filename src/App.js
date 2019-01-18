@@ -10,24 +10,22 @@ import Blog from './components/blog/Blog'
 import Trainings from './components/trainings/Trainings'
 import MobileNav from './components/nav/MobileNav';
 import NotFound from './NotFound';
-import LogRocket from 'logrocket';
-// import Sentry from './ErrorHanlding'
+import * as Sentry from '@sentry/browser';
+
+
+import helpers from './helpers';
+
+
 
 //error tracking
-if (process.env.REACT_APP_BUILD !== 'dev') {
-  LogRocket.init(process.env.REACT_APP_LOGROCKET_INIT);
-  LogRocket.identify('Test ID', {
-    // name: 'Bob',
-    // email: 'Saget',
+helpers.setCookie()
+// if (process.env.REACT_APP_BUILD !== 'dev') {
+  helpers.initLogRocket()
+  helpers.initSentry(Sentry)
+// }
 
-    // Add your own custom user variables here, ie:
-    // subscriptionType: 'pro'
-  });
-}
-// Sentry.init({
-//  dsn: "https://24ab99c4a6c54f4a8a859b85d2381de7@sentry.io/1364819"
-// });
 
+// Raven.config(sentry_url).install();
 class App extends Component {
   render() {
     return (
