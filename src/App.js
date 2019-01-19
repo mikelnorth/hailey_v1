@@ -25,13 +25,29 @@ LogRocket.identify('THE_USER_ID_IN_YOUR_APP', {
 //  dsn: "https://24ab99c4a6c54f4a8a859b85d2381de7@sentry.io/1364819"
 // });
 
+
+
 class App extends Component {
+
+  componentDidMount(){
+    var deferredPrompt;
+
+    window.addEventListener('beforeinstallprompt', (e) => {
+      // Prevent Chrome 67 and earlier from automatically showing the prompt
+      e.preventDefault();
+      // Stash the event so it can be triggered later.
+      deferredPrompt = e;
+      // Update UI notify the user they can add to home screen
+      // btnAdd.style.display = 'block';
+    });
+  }
+
   render() {
     return (
       <div className="App">
         <>
           <Nav />
-          <MobileNav/>
+          <MobileNav />
         </>
         <Switch>
           <Route component={About} exact path='/' />
