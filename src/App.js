@@ -9,8 +9,11 @@ import Blog from './components/blog/Blog'
 import Trainings from './components/trainings/Trainings'
 import MobileNav from './components/nav/MobileNav';
 import NotFound from './NotFound';
-import LogRocket from 'logrocket';
 // import Sentry from './ErrorHanlding'
+//import components
+
+// import utilities
+import LogRocket from 'logrocket';
 
 //error tracking
 LogRocket.init('82lcwx/hailey_v1');
