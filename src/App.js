@@ -29,16 +29,16 @@ helpers.setCookie()
 // Raven.config(sentry_url).install();
 class App extends Component {
 
-  componentDidMount(){
-    window.addEventListener('beforeinstallprompt', (e) => {
+  // componentDidMount(){
+    // window.addEventListener('beforeinstallprompt', (e) => {
       // Prevent Chrome 67 and earlier from automatically showing the prompt
-      e.preventDefault();
+      // e.preventDefault();
       // Stash the event so it can be triggered later.
       // let deferredPrompt = e;
       // Update UI notify the user they can add to home screen
       // btnAdd.style.display = 'block';
-    });
-  }
+    // });
+  // }
 
   render() {
     return (
