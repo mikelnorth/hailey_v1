@@ -102,7 +102,7 @@ class FullWidthTabs extends React.Component {
         return (
             <div className={classes.root}>
                 <AppBar position="static" color="default">
-                    <Tabs
+                    <Tabs style={{ color: '#000000b8'}}
                         value={this.state.value}
                         onChange={this.handleChange}
                         indicatorColor="primary"
