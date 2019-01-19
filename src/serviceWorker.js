@@ -21,11 +21,9 @@ const isLocalhost = Boolean(
 );
 
 export function register(config) {
-  console.log('got here', process.env.NODE_ENV)
   // if (process.env.NODE_ENV === 'production' && 'serviceWorker' in navigator) {
   if ('serviceWorker' in navigator) {
     // The URL constructor is available in all browsers that support SW.
-    console.log('object')
     const publicUrl = new URL(process.env.PUBLIC_URL, window.location.href);
     if (publicUrl.origin !== window.location.origin) {
       // Our service worker won't work if PUBLIC_URL is on a different origin
@@ -35,7 +33,6 @@ export function register(config) {
     }
 
     window.addEventListener('load', () => {
-      console.log(process.env.PUBLIC_URL)
       const swUrl = `${process.env.PUBLIC_URL}/service-worker.js`;
 
       if (isLocalhost) {
@@ -59,20 +56,15 @@ export function register(config) {
 }
 
 function registerValidSW(swUrl, config) {
-  console.log('contiuning')
   navigator.serviceWorker
     .register(swUrl)
     .then(registration => {
-      console.log('.then')
       registration.onupdatefound = () => {
         const installingWorker = registration.installing;
-        console.log('installingWorker', installingWorker)
         if (installingWorker === null) {
           return;
         }
-        console.log('before here')
         installingWorker.onstatechange = () => {
-          console.log('one step closer', installingWorker.state)
           if (installingWorker.state === 'installed') {
             if (navigator.serviceWorker.controller) {
               // At this point, the updated precached content has been fetched,
@@ -100,9 +92,7 @@ function registerValidSW(swUrl, config) {
             }
           }
         };
-        console.log('before ended')
       };
-      console.log('ended')
     })
     .catch(error => {
       console.error('Error during service worker registration:', error);
