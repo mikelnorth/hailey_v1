@@ -44,7 +44,7 @@
     <!-- for facebook and other social media platforms -->
     <meta property="og:title" content="Hailey North Blog">
     <meta property="og:description" content="Hailey is an aspiring soccer player, coach and teacher. Book a training session or follow her blog.">
-    <meta property="og:image" content="https://haileynorth.net/static/media/shot.2426091a.jpg">
+    <meta property="og:image" content="https://scontent-sjc3-1.xx.fbcdn.net/v/t1.0-9/39442203_10211776180510745_4143986649946128384_n.jpg?_nc_cat=104&_nc_ht=scontent-sjc3-1.xx&oh=bfdcff0b37df5fd7d1420004c96330ab&oe=5CBA0843">
     <meta property="og:url" content="https://haileynorth.net">
     <meta property="og:type" content="Blog" />
     <meta property="og:site_name" content="Hailey North Blog" />
@@ -52,7 +52,7 @@
     <!-- for Twitter -->
     <meta name="twitter:title" content="Hailey North Blog ">
     <meta name="twitter:description" content="Hailey is an aspiring soccer player, coach and teacher. Book a training session or follow her blog.">
-    <meta name="twitter:image" content="https://haileynorth.net/static/media/shot.2426091a.jpg">
+    <meta name="twitter:image" content="https://scontent-sjc3-1.xx.fbcdn.net/v/t1.0-9/39442203_10211776180510745_4143986649946128384_n.jpg?_nc_cat=104&_nc_ht=scontent-sjc3-1.xx&oh=bfdcff0b37df5fd7d1420004c96330ab&oe=5CBA0843">
     <meta name="twitter:card" content="summary">
 
 
@@ -61,7 +61,26 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"crossorigin="anonymous">
+    <script type="text/javascript">
+      (function(){
+        var ms_ie = false;
+        var ua = window.navigator.userAgent;
+        var old_ie = ua.indexOf('MSIE ');
+        var new_ie = ua.indexOf('Trident/');
 
+        if ((old_ie > -1) || (new_ie > -1)) {
+            ms_ie = true;
+        }
+        if ( ms_ie ) {
+            //IE specific code goes here
+            console.log('isIE')
+            var script = document.createElement("script");
+            script.setAttribute("src", "https://cdn.polyfill.io/v2/polyfill.min.js?features=default,fetch,Array.prototype.includes,Array.prototype.find&v=01152019");
+            document.getElementsByTagName("head")[0].appendChild(script);
+        }
+      }())
+    </script>
+    <!-- <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=default,fetch,Array.prototype.includes,Array.prototype.find&v=01152019"></script> -->
     <title>Hailey North</title>
   </head>
   <body>
