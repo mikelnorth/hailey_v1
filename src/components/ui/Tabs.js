@@ -31,6 +31,9 @@ const styles = theme => ({
         backgroundColor: theme.palette.background.paper,
         width: '100%',
     },
+    tab:{
+        color:'#615f5f'
+    }
 });
 
 class FullWidthTabs extends React.Component {
@@ -102,16 +105,16 @@ class FullWidthTabs extends React.Component {
         return (
             <div className={classes.root}>
                 <AppBar position="static" color="default">
-                    <Tabs style={{ color: '#000000b8'}}
+                    <Tabs
                         value={this.state.value}
                         onChange={this.handleChange}
                         indicatorColor="primary"
                         textColor="primary"
                         fullWidth
                     >
-                        {One&&<Tab label={One} />}
-                        {Two&&<Tab label={Two} />}
-                        {Three&&<Tab label={Three} />}
+                        {One&&<Tab className={classes.tab} label={One} />}
+                        {Two&&<Tab className={classes.tab} label={Two} />}
+                        {Three&&<Tab className={classes.tab} label={Three} />}
                     </Tabs>
                 </AppBar>
                 {
