@@ -5,13 +5,13 @@ import './App.scss';
 // import logo from './logo.svg';
 //import routes
 import Nav from './components/nav/Nav';
-// import About from './components/about/About'
-// import Contact from './components/contact/Contact'
-// import Blog from './components/blog/Blog'
-// import Trainings from './components/trainings/Trainings'
+import About from './components/about/About'
+import Contact from './components/contact/Contact'
+import Blog from './components/blog/Blog'
+import Trainings from './components/trainings/Trainings'
 import MobileNav from './components/nav/MobileNav';
-// import NotFound from './NotFound';
-import Routes from './Routes'
+import NotFound from './NotFound';
+
 
 // import uitils
 import * as Sentry from '@sentry/browser';
@@ -49,15 +49,13 @@ class App extends Component {
           <Nav />
           <MobileNav />
         </>
-        {/* <Switch> */}
-          {/* <Route component={About} exact path='/' />
+        <Switch>
+          <Route component={About} exact path='/' />
           <Route component={Blog} exact path='/blog' />
           <Route component={Contact} path='/contact' />
           <Route component={Trainings} path='/trainings' />
-          <Route component={NotFound} /> */}
-
-        {/* </Switch> */}
-          <Routes/>
+          <Route component={NotFound} />
+        </Switch>
       </div>
     );
   }
