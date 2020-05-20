@@ -10,7 +10,7 @@ export default class Contact extends Component {
       <div className="contact-container bg-contact2" style={{ backgroundImage: "url('../../assets/img/bg-01.jpg')" }}>
         <div className="container-contact2">
           <div className="wrap-contact2">
-            <form className="contact2-form validate-form" action="https://formspree.io/mikel.north@gmail.com" method="POST">
+            <form className="contact2-form validate-form" action="https://formspree.io/haileysnorth@gmail.com" method="POST">
               <span className="contact2-form-title">
                 Contact Me
 					    </span>
