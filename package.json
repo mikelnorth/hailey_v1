@@ -10,7 +10,7 @@
     "babel-plugin-add-react-displayname": "0.0.5",
     "logrocket": "^0.6.19",
     "logrocket-react": "^3.0.0",
-    "node-sass": "^4.10.0",
+    "node-sass": "^7.0.0",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
     "react-router": "^4.3.1",
